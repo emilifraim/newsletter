@@ -1,5 +1,3 @@
-/* Sticky footer styles
--------------------------------------------------- */
 html {
 	position: relative;
 	min-height: 100%;
@@ -26,10 +24,6 @@ body {
 	background-color: #131021;
 	color: #94aebf !important;
 }
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
 body > .container {
 	padding: 60px 15px 0;

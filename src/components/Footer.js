@@ -133,7 +133,7 @@ class Footer extends Component {
 		}
 		return (
 			<footer className="footer">
-				<div className="container">{content}</div>
+				<div className="container-fluid">{content}</div>
 				<div className="footer-copyright text-center py-3">© 2019 Copyright</div>
 			</footer>
 		);

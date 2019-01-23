@@ -1,32 +1,156 @@
-.App {
-  text-align: center;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.headerBG {
+	background-color: #131021 !important;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: auto;
+	/* line-height: 60px; Vertically center the text there */
+	background-color: #131021;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer-copyright {
+	background-color: #131021;
+	color: #94aebf !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	padding: 60px 15px 0;
+}
+
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+code {
+	font-size: 80%;
+}
+
+.custom-h-title {
+	color: #94aebf;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.custom-h-title-2 {
+	color: #94aebf;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+input[type=text] {
+	background-color: #2a2739;
+	color: #7b7884;
+}
+
+input[type=text]:focus {
+	background-color: #2a2739;
+	color: #7b7884;
+}
+
+.custom-btn {
+	background-color: #ed2034;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.custom-privacy-policy {
+	color: #6a686f;
+	font-size: 0.9em;
+	font-weight: 400;
+}
+
+.fade-in {
+	-webkit-animation: fadeIn 1s 1; /* Safari 4+ */
+	-moz-animation: fadeIn 1s 1; /* Fx 5+ */
+	animation: fadeIn 1s 1; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media all and (max-width: 580px) {
+	.btn-sm-block {
+		width: 100%;
+		display: block;
+	}
+
+	.custom-h-title {
+		color: #94aebf;
+		font-size: 1em;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.custom-h-title-2 {
+		color: #94aebf;
+		font-size: 0.9em;
+		font-weight: 600;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.custom-h-title {
+		color: #94aebf;
+		font-size: 1em;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.custom-h-title-2 {
+		color: #94aebf;
+		font-size: 1em;
+		font-weight: 600;
+		text-align: center;
+	}
 }

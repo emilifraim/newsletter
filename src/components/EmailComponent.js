@@ -12,7 +12,7 @@ class EmailComponent extends Component {
 	render() {
 		const { email, errorEmail, handleNext, onChange, checked, errorChecked, handleCheck } = this.props;
 		return (
-			<div className="container mt-4 offset-md-3 fade-in">
+			<div className="row mt-4 offset-md-3 fade-in">
 				<form className="" onSubmit={handleNext}>
 					<div className="row">
 						<div className="col-md-12 col-sm-12 ">

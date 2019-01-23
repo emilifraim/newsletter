@@ -54,7 +54,7 @@ class FirstLastNameComponent extends Component {
 FirstLastNameComponent.propTypes = {
 	firstName: PropTypes.string.isRequired,
 	errorFirstName: PropTypes.string,
-	lastName: PropTypes.bool.isRequired,
+	lastName: PropTypes.string.isRequired,
 	errorLastName: PropTypes.string,
 	handleSubmit: PropTypes.func.isRequired,
 	onChange: PropTypes.func.isRequired

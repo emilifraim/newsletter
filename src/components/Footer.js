@@ -59,6 +59,14 @@ class Footer extends Component {
 			errorLastName: ''
 		});
 		if (!this.isEmpty(this.state.firstName) && !this.isEmpty(this.state.lastName)) {
+			const newUser = {
+				email: this.state.email,
+				firstName: this.state.firstName,
+				lastName: this.state.lastName
+			};
+
+			console.log('newUser: ', newUser);
+
 			this.setState({
 				toggleEmailComponent: false,
 				toggleFirstLastNameComponent: false,
@@ -81,7 +89,8 @@ class Footer extends Component {
 	};
 
 	ValidateEmail = (email) => {
-		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+		const regexp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if (regexp.test(email)) {
 			return true;
 		}
 		return false;

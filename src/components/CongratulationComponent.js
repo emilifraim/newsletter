@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TextFieldGroup from './TextFieldGroup';
 
 class CongratulationComponent extends Component {
 	constructor(props) {
